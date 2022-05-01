@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gabriel Branco</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>Gabriel Branco</p>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/brancogabriel">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/5555996315239">whatsapp</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:gabrielcrb@gmail.com">e-mail</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Gabriel Branco</h1>
+                <h5>Hiring Coders Challenge</h5>
+            </div>
+
+            <div onclick=displayAbout() id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Este site foi realizado durante a fase 1 do projeto Hiring Coders #3, como um projeto de portfólio. Nele você encontrará meus principais contatos, além do link para o meu perfil do github. 
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+        
+    </script>
+</body>
+
+</html>
